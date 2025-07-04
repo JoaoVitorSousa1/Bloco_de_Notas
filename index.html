@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bloco de Notas</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="icon">📝</span>
+            <span class="title">Bloco de Notas</span>
+        </div>
+    </header>
+    <main>
+        <section class="intro-text">
+            <h2>Bem-vindo ao Bloco de Notas </h2>
+            <p>
+                Este aplicativo foi desenvolvido com o objetivo de oferecer a você uma ferramenta prática, intuitiva e eficiente para organizar suas anotações do dia a dia. A proposta é proporcionar uma experiência simples e acessível, diretamente no navegador, sem necessidade de cadastros ou instalações. 
+                Com ele, você pode escrever novas ideias, salvar informações importantes, editar conteúdos sempre que necessário, excluir anotações que não são mais úteis e até exportar tudo com facilidade. 
+                Tudo isso de forma rápida, segura e totalmente online, ideal para quem busca agilidade e funcionalidade em um só lugar.
+                Seja para estudos, trabalho ou organização pessoal, este bloco de notas digital está pronto para atender às suas necessidades.
+            </p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>Como usar</h2>
+            <ul>
+                <li><b>Nota:</b> Selecione em <b>Novo</b> para criar um novo bloco de anotações.</li>
+                <li><b>Salvar:</b> Selecione <b>Salvar</b> para manter suas alterações salvas.</li>
+                <li><b>Excluir:</b> Selecione uma nota e clique em <b>Excluir</b> para deletar determinada nota.</li>
+                <li><b>Exportar:</b> Selecione <b>Exportar</b> para fazer o download <b>.txt</b> da anotação no seu aparelho.</li>
+                <li>Você pode editar o texto a qualquer momento.</li>
+                <li>A lista à direita mostra suas notas recentes. Clique no título para editar no editor.</li>
+            </ul>
+        </section>
+
+        <section class="editor-section">
+            <div class="editor-container">
+                <div class="section-title">Editor de texto</div>
+                <input type="text" id="noteTitle" placeholder="Título da nota" maxlength="100" />
+                <textarea id="noteEditor" placeholder="Digite sua nota aqui..."></textarea>
+                <div class="editor-actions">
+                    <button id="newNoteBtn" class="action-btn">Novo</button>
+                    <button id="saveNoteBtn" class="action-btn">Salvar</button>
+                    <button id="exportNoteBtn" class="action-btn">Exportar</button>
+                    <button id="deleteNoteBtn" class="action-btn">Excluir</button>
+                </div>
+            </div>
+            <div class="recent-container">
+                <div class="section-title">Notas recentes</div>
+                <ul id="recentNotes"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-content">
+        Todos os diretos reservados João Vitor Ferreira de Sousa 2025 &copy;
+    </div>
+</footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
